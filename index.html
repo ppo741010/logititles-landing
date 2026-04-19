@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logititles — Clean and classify logistics job titles in seconds</title>
+  <meta name="description" content="AI-powered job title classification built for the ANZ logistics industry. Map, clean, and understand thousands of titles automatically." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e3a5f 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold text-indigo-700 tracking-tight">Logititles</span>
+      <div class="flex items-center gap-4">
+        <a href="#pricing" class="text-sm text-gray-500 hover:text-gray-800 transition">Pricing</a>
+        <a href="https://logistics-title-mapper.vercel.app" target="_blank"
+           class="text-sm bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition font-medium">
+          Try Demo →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="gradient-hero text-white pt-32 pb-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-block bg-indigo-500/30 border border-indigo-400/40 text-indigo-200 text-xs font-semibold px-3 py-1 rounded-full mb-6 tracking-wide uppercase">
+        Beta — Limited Early Access
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+        Clean and classify logistics<br class="hidden sm:block" /> job titles in seconds.
+      </h1>
+      <p class="text-indigo-200 text-lg mb-10 max-w-xl mx-auto">
+        Using AI to map, classify, and track titles from Seek and Indeed automatically —
+        so you can focus on insights, not data cleaning.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#early-access"
+           class="bg-white text-indigo-700 font-semibold px-7 py-3 rounded-xl hover:bg-indigo-50 transition shadow-lg">
+          Get Early Access
+        </a>
+        <a href="https://logistics-title-mapper.vercel.app" target="_blank"
+           class="border border-indigo-400 text-white font-semibold px-7 py-3 rounded-xl hover:bg-indigo-800/40 transition">
+          Try the Free Tool →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold text-center text-gray-900 mb-12">
+        Built for logistics data, not generic HR tools
+      </h2>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">🏷️</div>
+          <h3 class="font-bold text-gray-900 mb-2">Smart Title Cleaning</h3>
+          <p class="text-gray-500 text-sm">Remove noise, fix abbreviations, and standardise job titles across AU and NZ Seek/Indeed listings automatically.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">📦</div>
+          <h3 class="font-bold text-gray-900 mb-2">Domain Classification</h3>
+          <p class="text-gray-500 text-sm">Instantly categorise titles into warehouse, transport, freight, customs, procurement, and more — with confidence scores.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">📊</div>
+          <h3 class="font-bold text-gray-900 mb-2">Bulk CSV Processing</h3>
+          <p class="text-gray-500 text-sm">Upload thousands of rows from your spreadsheet. Get back clean, classified data ready for your dashboard or report.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-12">How it works</h2>
+      <div class="grid sm:grid-cols-3 gap-8 text-left">
+        <div class="flex flex-col items-start">
+          <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">1</div>
+          <h3 class="font-semibold text-gray-900 mb-1">Paste or Upload</h3>
+          <p class="text-gray-500 text-sm">Enter a single title or upload a CSV with thousands of rows.</p>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">2</div>
+          <h3 class="font-semibold text-gray-900 mb-1">AI Classifies</h3>
+          <p class="text-gray-500 text-sm">Our rule-based + AI engine cleans and maps each title to domain, seniority, and work nature.</p>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">3</div>
+          <h3 class="font-semibold text-gray-900 mb-1">Export Results</h3>
+          <p class="text-gray-500 text-sm">Download your classified dataset as CSV, ready to drop into your reports or dashboards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Simple, transparent pricing</h2>
+      <p class="text-gray-500 mb-12">Start with a 14-day free trial. No credit card required.</p>
+
+      <div class="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <!-- Basic -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm text-left">
+          <div class="text-sm font-semibold text-indigo-600 uppercase tracking-wide mb-2">Basic</div>
+          <div class="text-4xl font-extrabold text-gray-900 mb-1">$9<span class="text-lg font-normal text-gray-400">/mo</span></div>
+          <p class="text-gray-500 text-sm mb-6">Perfect for individual analysts and researchers.</p>
+          <ul class="space-y-2 text-sm text-gray-600 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Up to 1,000 titles/month</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Single & bulk classification</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> CSV export</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> ANZ logistics taxonomy</li>
+            <li class="flex items-center gap-2 text-gray-400"><span>✗</span> API access</li>
+          </ul>
+          <button onclick="openModal('Basic', '$9/mo')"
+            class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-xl hover:bg-indigo-700 transition">
+            Start Free Trial
+          </button>
+        </div>
+
+        <!-- Pro -->
+        <div class="bg-indigo-700 rounded-2xl p-8 border border-indigo-600 shadow-lg text-left relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-amber-900 text-xs font-bold px-3 py-1 rounded-full">
+            Most Popular
+          </div>
+          <div class="text-sm font-semibold text-indigo-200 uppercase tracking-wide mb-2">Pro</div>
+          <div class="text-4xl font-extrabold text-white mb-1">$29<span class="text-lg font-normal text-indigo-300">/mo</span></div>
+          <p class="text-indigo-200 text-sm mb-6">For teams and power users with heavy classification needs.</p>
+          <ul class="space-y-2 text-sm text-indigo-100 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Unlimited titles/month</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Single & bulk classification</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> CSV export</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> ANZ logistics taxonomy</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> API access (coming soon)</li>
+          </ul>
+          <button onclick="openModal('Pro', '$29/mo')"
+            class="w-full bg-white text-indigo-700 font-semibold py-3 rounded-xl hover:bg-indigo-50 transition">
+            Start Free Trial
+          </button>
+        </div>
+      </div>
+
+      <p class="text-gray-400 text-sm mt-8">
+        Both plans include a <strong class="text-gray-600">14-day free trial</strong> with full access.
+        Cancel anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- EARLY ACCESS FORM -->
+  <section id="early-access" class="py-20 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Join the Early Access List</h2>
+      <p class="text-gray-500 mb-8">
+        Logititles is in limited beta. Leave your email and we'll notify you when your spot is ready —
+        with a full 14-day free trial, no card needed.
+      </p>
+      <form id="waitlist-form" class="flex flex-col sm:flex-row gap-3">
+        <input
+          id="email-input"
+          type="email"
+          placeholder="your@email.com"
+          required
+          class="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+        <button type="submit"
+          class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-indigo-700 transition whitespace-nowrap">
+          Notify Me
+        </button>
+      </form>
+      <p id="form-message" class="text-sm mt-3 hidden"></p>
+      <p class="text-gray-400 text-xs mt-4">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-100 py-8 px-6 text-center text-gray-400 text-sm">
+    <p>© 2025 Logititles. Built for the ANZ logistics industry.</p>
+    <p class="mt-1">
+      <a href="https://logistics-title-mapper.vercel.app" class="hover:text-indigo-600 transition">Try the free tool →</a>
+    </p>
+  </footer>
+
+  <!-- BETA MODAL -->
+  <div id="modal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl">✕</button>
+      <div class="text-2xl mb-3">🚀</div>
+      <h3 class="text-xl font-bold text-gray-900 mb-3">Thanks for your interest!</h3>
+      <p class="text-gray-500 text-sm mb-5" id="modal-plan-text">
+        Logititles is currently in limited Beta testing. We're refining our AI classification engine
+        to ensure the highest accuracy for ANZ logistics roles.
+        <br /><br />
+        Leave your email below and we'll give you <strong>priority access with a full 14-day free trial</strong>
+        when we launch.
+      </p>
+      <form id="modal-form" class="flex flex-col gap-3">
+        <input
+          id="modal-email"
+          type="email"
+          placeholder="your@email.com"
+          required
+          class="border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+        <button type="submit"
+          class="bg-indigo-600 text-white font-semibold py-3 rounded-xl hover:bg-indigo-700 transition">
+          Reserve My Spot
+        </button>
+      </form>
+      <p id="modal-message" class="text-sm mt-3 hidden"></p>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = "https://logistics-title-mapper-api.onrender.com";
+    let selectedPlan = "";
+
+    function openModal(plan, price) {
+      selectedPlan = plan;
+      document.getElementById("modal-plan-text").innerHTML = `
+        Logititles is currently in <strong>limited Beta testing</strong>. We're refining our AI classification engine
+        to ensure the highest accuracy for ANZ logistics roles.
+        <br /><br />
+        Leave your email and we'll give you <strong>priority access to the ${plan} plan ($${price === "$9/mo" ? "9" : "29"}/mo)
+        with a full 14-day free trial</strong> — no credit card needed.
+      `;
+      document.getElementById("modal").classList.remove("hidden");
+      document.getElementById("modal").classList.add("flex");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+      document.getElementById("modal").classList.remove("flex");
+    }
+
+    async function submitEmail(email, plan, formMsgId) {
+      const msgEl = document.getElementById(formMsgId);
+      try {
+        const res = await fetch(`${API_BASE}/waitlist`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, plan }),
+        });
+        msgEl.classList.remove("hidden");
+        if (res.ok) {
+          msgEl.className = "text-sm mt-3 text-green-600";
+          msgEl.textContent = "You're on the list! We'll be in touch soon. 🎉";
+        } else {
+          msgEl.className = "text-sm mt-3 text-red-500";
+          msgEl.textContent = "Something went wrong. Please try again.";
+        }
+      } catch {
+        msgEl.classList.remove("hidden");
+        msgEl.className = "text-sm mt-3 text-red-500";
+        msgEl.textContent = "Could not connect. Please try again later.";
+      }
+    }
+
+    document.getElementById("waitlist-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email-input").value;
+      await submitEmail(email, "general", "form-message");
+    });
+
+    document.getElementById("modal-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("modal-email").value;
+      await submitEmail(email, selectedPlan, "modal-message");
+    });
+
+    // Close modal on backdrop click
+    document.getElementById("modal").addEventListener("click", (e) => {
+      if (e.target === document.getElementById("modal")) closeModal();
+    });
+  </script>
+
+</body>
+</html>
