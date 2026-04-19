@@ -269,8 +269,12 @@
       document.getElementById("modal").classList.remove("flex");
     }
 
-    async function submitEmail(email, plan, formMsgId) {
+    async function submitEmail(email, plan, formMsgId, btnEl) {
       const msgEl = document.getElementById(formMsgId);
+      const originalText = btnEl.textContent;
+      btnEl.disabled = true;
+      btnEl.textContent = "Sending...";
+      btnEl.classList.add("opacity-60", "cursor-not-allowed");
       try {
         const res = await fetch(`${API_BASE}/waitlist`, {
           method: "POST",
@@ -281,27 +285,34 @@
         if (res.ok) {
           msgEl.className = "text-sm mt-3 text-green-600";
           msgEl.textContent = "You're on the list! We'll be in touch soon. 🎉";
+          btnEl.textContent = "Done!";
         } else {
           msgEl.className = "text-sm mt-3 text-red-500";
           msgEl.textContent = "Something went wrong. Please try again.";
+          btnEl.disabled = false;
+          btnEl.textContent = originalText;
+          btnEl.classList.remove("opacity-60", "cursor-not-allowed");
         }
       } catch {
         msgEl.classList.remove("hidden");
         msgEl.className = "text-sm mt-3 text-red-500";
         msgEl.textContent = "Could not connect. Please try again later.";
+        btnEl.disabled = false;
+        btnEl.textContent = originalText;
+        btnEl.classList.remove("opacity-60", "cursor-not-allowed");
       }
     }
 
     document.getElementById("waitlist-form").addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = document.getElementById("email-input").value;
-      await submitEmail(email, "general", "form-message");
+      const btn = e.submitter || e.target.querySelector("button[type=submit]");
+      await submitEmail(document.getElementById("email-input").value, "general", "form-message", btn);
     });
 
     document.getElementById("modal-form").addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = document.getElementById("modal-email").value;
-      await submitEmail(email, selectedPlan, "modal-message");
+      const btn = e.submitter || e.target.querySelector("button[type=submit]");
+      await submitEmail(document.getElementById("modal-email").value, selectedPlan, "modal-message", btn);
     });
 
     // Close modal on backdrop click
