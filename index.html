@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Logititles — Clean and classify logistics job titles in seconds</title>
-  <meta name="description" content="AI-powered job title classification built for the ANZ logistics industry. Map, clean, and understand thousands of titles automatically." />
+  <meta name="description" content="A workflow tool that cleans and classifies messy logistics job titles into structured, reviewable, export-ready data — built for ANZ HR, recruitment, and workforce teams." />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHKHH11Y12"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -89,7 +89,7 @@
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div class="text-3xl mb-4">🏷️</div>
           <h3 class="font-bold text-gray-900 mb-2">Smart Title Cleaning</h3>
-          <p class="text-gray-500 text-sm">Remove noise, fix abbreviations, and standardise job titles across AU and NZ Seek/Indeed listings automatically.</p>
+          <p class="text-gray-500 text-sm">Remove noise, fix abbreviations, and standardise job titles from your spreadsheet or data export into clean, consistent labels.</p>
         </div>
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div class="text-3xl mb-4">📦</div>
@@ -99,7 +99,7 @@
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div class="text-3xl mb-4">📊</div>
           <h3 class="font-bold text-gray-900 mb-2">Bulk CSV Processing</h3>
-          <p class="text-gray-500 text-sm">Upload thousands of rows from your spreadsheet. Get back clean, classified data ready for your dashboard or report.</p>
+          <p class="text-gray-500 text-sm">Upload thousands of rows from your spreadsheet. Get back clean, classified data ready for spreadsheet review, reporting, or downstream analysis.</p>
         </div>
       </div>
     </div>
@@ -117,13 +117,13 @@
         </div>
         <div class="flex flex-col items-start">
           <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">2</div>
-          <h3 class="font-semibold text-gray-900 mb-1">AI Classifies</h3>
-          <p class="text-gray-500 text-sm">Our rule-based + AI engine cleans and maps each title to domain, seniority, and work nature.</p>
+          <h3 class="font-semibold text-gray-900 mb-1">Structured Classification</h3>
+          <p class="text-gray-500 text-sm">The engine cleans each title and suggests domain, seniority, work nature, and confidence flags for your review.</p>
         </div>
         <div class="flex flex-col items-start">
           <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">3</div>
           <h3 class="font-semibold text-gray-900 mb-1">Export Results</h3>
-          <p class="text-gray-500 text-sm">Download your classified dataset as CSV, ready to drop into your reports or dashboards.</p>
+          <p class="text-gray-500 text-sm">Download your classified dataset as CSV, ready for spreadsheet review, reporting, or downstream analysis.</p>
         </div>
       </div>
     </div>
@@ -163,7 +163,7 @@
           <div class="text-4xl font-extrabold text-white mb-1">$29<span class="text-lg font-normal text-indigo-300">/mo</span></div>
           <p class="text-indigo-200 text-sm mb-6">For teams and power users with heavy classification needs.</p>
           <ul class="space-y-2 text-sm text-indigo-100 mb-8">
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Unlimited titles/month</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Up to 25,000 titles/month</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Single & bulk classification</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> CSV export</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> ANZ logistics taxonomy</li>
@@ -186,10 +186,10 @@
   <!-- EARLY ACCESS FORM -->
   <section id="early-access" class="py-20 px-6">
     <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-gray-900 mb-3">Join the Early Access List</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Join the Beta Testing List</h2>
       <p class="text-gray-500 mb-8">
-        Logititles is in limited beta. Leave your email and we'll notify you when your spot is ready —
-        with a full 14-day free trial, no card needed.
+        Logititles is currently in beta. Try the free demo and leave your email if you're open to
+        sharing feedback or testing future bulk upload features.
       </p>
       <form id="waitlist-form" class="flex flex-col sm:flex-row gap-3">
         <input
@@ -211,7 +211,7 @@
 
   <!-- FOOTER -->
   <footer class="border-t border-gray-100 py-8 px-6 text-center text-gray-400 text-sm">
-    <p>© 2025 Logititles. Built for the ANZ logistics industry.</p>
+    <p>© 2026 Logititles. Built for the ANZ logistics industry.</p>
     <p class="mt-1">
       <a href="https://logistics-title-mapper.vercel.app" class="hover:text-indigo-600 transition">Try the free tool →</a>
     </p>
@@ -224,8 +224,8 @@
       <div class="text-2xl mb-3">🚀</div>
       <h3 class="text-xl font-bold text-gray-900 mb-3">Thanks for your interest!</h3>
       <p class="text-gray-500 text-sm mb-5" id="modal-plan-text">
-        Logititles is currently in limited Beta testing. We're refining our AI classification engine
-        to ensure the highest accuracy for ANZ logistics roles.
+        Logititles is currently in beta. We're refining the classification engine with real logistics
+        data from AU and NZ roles.
         <br /><br />
         Leave your email below and we'll give you <strong>priority access with a full 14-day free trial</strong>
         when we launch.
@@ -254,8 +254,8 @@
     function openModal(plan, price) {
       selectedPlan = plan;
       document.getElementById("modal-plan-text").innerHTML = `
-        Logititles is currently in <strong>limited Beta testing</strong>. We're refining our AI classification engine
-        to ensure the highest accuracy for ANZ logistics roles.
+        Logititles is currently in <strong>limited Beta testing</strong>. We're refining the classification engine
+        with real logistics data from AU and NZ roles.
         <br /><br />
         Leave your email and we'll give you <strong>priority access to the ${plan} plan ($${price === "$9/mo" ? "9" : "29"}/mo)
         with a full 14-day free trial</strong> — no credit card needed.
