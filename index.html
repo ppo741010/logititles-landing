@@ -287,6 +287,7 @@
           msgEl.className = "text-sm mt-3 text-green-600";
           msgEl.textContent = "You're on the list! We'll be in touch soon. 🎉";
           btnEl.textContent = "Done!";
+          gtag('event', 'waitlist_signup', { plan: plan });
         } else {
           msgEl.className = "text-sm mt-3 text-red-500";
           msgEl.textContent = "Something went wrong. Please try again.";
