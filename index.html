@@ -101,6 +101,16 @@
           <h3 class="font-bold text-gray-900 mb-2">Bulk CSV Processing</h3>
           <p class="text-gray-500 text-sm">Upload rows from your spreadsheet and get back clean, classified data ready for review, reporting, or downstream analysis.</p>
         </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">📈</div>
+          <h3 class="font-bold text-gray-900 mb-2">Data Analysis & Charts</h3>
+          <p class="text-gray-500 text-sm">Instantly visualise your dataset — domain distribution, seniority breakdown, top skills, and salary benchmarks. Export as PNG or PDF report.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-3xl mb-4">✨</div>
+          <h3 class="font-bold text-gray-900 mb-2">AI Assistant</h3>
+          <p class="text-gray-500 text-sm">Ask questions about your classified data in plain English — hiring trends, skill gaps, salary comparisons, and more. Available on Pro plan.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -125,6 +135,11 @@
           <h3 class="font-semibold text-gray-900 mb-1">Export Results</h3>
           <p class="text-gray-500 text-sm">Download your classified dataset as CSV, ready for spreadsheet review, reporting, or downstream analysis.</p>
         </div>
+        <div class="flex flex-col items-start">
+          <div class="bg-indigo-100 text-indigo-700 font-bold w-9 h-9 rounded-full flex items-center justify-center mb-4 text-sm">4</div>
+          <h3 class="font-semibold text-gray-900 mb-1">Analyse & Ask</h3>
+          <p class="text-gray-500 text-sm">View auto-generated charts, download a PDF summary report, or ask the AI assistant questions about your data.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -139,13 +154,14 @@
         <!-- Basic -->
         <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm text-left">
           <div class="text-sm font-semibold text-indigo-600 uppercase tracking-wide mb-2">Basic</div>
-          <div class="text-4xl font-extrabold text-gray-900 mb-1">$9<span class="text-lg font-normal text-gray-400">/mo</span></div>
+          <div class="text-4xl font-extrabold text-gray-900 mb-1">NZ$9<span class="text-lg font-normal text-gray-400">/mo</span></div>
           <p class="text-gray-500 text-sm mb-6">Perfect for individual analysts and researchers.</p>
           <ul class="space-y-2 text-sm text-gray-600 mb-8">
             <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Up to 1,000 titles/month</li>
             <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Single & bulk classification</li>
             <li class="flex items-center gap-2"><span class="text-green-500">✓</span> CSV & Excel export</li>
             <li class="flex items-center gap-2"><span class="text-green-500">✓</span> ANZ salary benchmarks</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Data charts & analysis</li>
             <li class="flex items-center gap-2 text-gray-400"><span>✗</span> AI Assistant</li>
           </ul>
           <button onclick="openModal('Basic', '$9/mo')"
@@ -160,13 +176,14 @@
             Most Popular
           </div>
           <div class="text-sm font-semibold text-indigo-200 uppercase tracking-wide mb-2">Pro</div>
-          <div class="text-4xl font-extrabold text-white mb-1">$29<span class="text-lg font-normal text-indigo-300">/mo</span></div>
+          <div class="text-4xl font-extrabold text-white mb-1">NZ$29<span class="text-lg font-normal text-indigo-300">/mo</span></div>
           <p class="text-indigo-200 text-sm mb-6">For teams and power users with heavy classification needs.</p>
           <ul class="space-y-2 text-sm text-indigo-100 mb-8">
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Up to 25,000 titles/month</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Single & bulk classification</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> CSV & Excel export</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> ANZ salary benchmarks</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Data charts & analysis</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> AI Assistant — ask questions about your results</li>
             <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Priority processing, no rate limits</li>
           </ul>
@@ -181,6 +198,7 @@
         Both plans include a <strong class="text-gray-600">14-day free trial</strong> with full access.
         Cancel anytime.
       </p>
+      <p class="text-gray-400 text-sm mt-2">Prices in NZD. AU customers billed in NZD.</p>
     </div>
   </section>
 
@@ -258,7 +276,7 @@
         Logititles is currently in <strong>limited Beta testing</strong>. We're refining the classification workflow
         to improve accuracy and usability for ANZ logistics roles.
         <br /><br />
-        Leave your email and we'll give you <strong>priority access to the ${plan} plan ($${price === "$9/mo" ? "9" : "29"}/mo)
+        Leave your email and we'll give you <strong>priority access to the ${plan} plan (NZ$${price === "$9/mo" ? "9" : "29"}/mo)
         with a full 14-day free trial</strong> — no credit card needed.
       `;
       document.getElementById("modal").classList.remove("hidden");
