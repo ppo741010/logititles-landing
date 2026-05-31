@@ -80,6 +80,123 @@
     </div>
   </section>
 
+  <!-- BEFORE / AFTER -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">See it in action</h2>
+      <p class="text-gray-500 mb-10">Paste a messy job title — get back a clean, structured result.</p>
+      <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-6 py-4 font-semibold text-gray-500 uppercase tracking-wide text-xs w-1/2">Raw Title (Before)</th>
+              <th class="text-left px-6 py-4 font-semibold text-indigo-600 uppercase tracking-wide text-xs w-1/2">Logititles Output (After)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50 transition">
+              <td class="px-6 py-4 font-mono text-gray-500">Storeperson</td>
+              <td class="px-6 py-4"><span class="font-semibold text-gray-800">Warehouse Operator</span> <span class="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Warehouse</span> <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Entry Level</span></td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="px-6 py-4 font-mono text-gray-500">Sr. Freight Coord – FCL/LCL (NZ)</td>
+              <td class="px-6 py-4"><span class="font-semibold text-gray-800">Senior Freight Coordinator</span> <span class="ml-2 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Freight Forwarding</span> <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Senior</span></td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="px-6 py-4 font-mono text-gray-500">Supply Chain Analyst</td>
+              <td class="px-6 py-4"><span class="font-semibold text-gray-800">Supply Chain Analyst</span> <span class="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Planning</span> <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Mid Level</span></td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="px-6 py-4 font-mono text-gray-500">3PL Ops Mgr – Warehouse [Contract]</td>
+              <td class="px-6 py-4"><span class="font-semibold text-gray-800">Operations Manager</span> <span class="ml-2 text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">Operations</span> <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Manager</span></td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="px-6 py-4 font-mono text-gray-500">Demand Planner – APAC</td>
+              <td class="px-6 py-4"><span class="font-semibold text-gray-800">Demand Planner</span> <span class="ml-2 text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">Planning</span> <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">Senior</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="https://app.logititles.com" target="_blank"
+        class="inline-block mt-8 bg-indigo-600 text-white font-semibold px-7 py-3 rounded-xl hover:bg-indigo-700 transition">
+        Try it with your own titles →
+      </a>
+    </div>
+  </section>
+
+  <!-- WHO IS IT FOR -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center text-gray-900 mb-3">Who is Logititles for?</h2>
+      <p class="text-center text-gray-500 mb-10">Choose your use case.</p>
+
+      <div class="flex flex-wrap justify-center gap-3 mb-10" id="role-tabs">
+        <button onclick="showRole('recruiter')" class="role-tab active px-5 py-2.5 rounded-full text-sm font-semibold border transition" data-role="recruiter">Recruiter / HR</button>
+        <button onclick="showRole('analyst')" class="role-tab px-5 py-2.5 rounded-full text-sm font-semibold border transition" data-role="analyst">Logistics Analyst</button>
+        <button onclick="showRole('consultant')" class="role-tab px-5 py-2.5 rounded-full text-sm font-semibold border transition" data-role="consultant">Consultant / Researcher</button>
+        <button onclick="showRole('training')" class="role-tab px-5 py-2.5 rounded-full text-sm font-semibold border transition" data-role="training">Training Provider</button>
+        <button onclick="showRole('jobseeker')" class="role-tab px-5 py-2.5 rounded-full text-sm font-semibold border transition" data-role="jobseeker">Job Seeker</button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm max-w-2xl mx-auto">
+        <div id="role-recruiter" class="role-content">
+          <div class="text-3xl mb-3">👥</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Recruiter / HR</h3>
+          <p class="text-gray-500 text-sm mb-6">Clean and organise messy job titles from job listings or spreadsheets.</p>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold text-gray-700">Problem:</span> <span class="text-gray-500">Job titles are often written inconsistently across different listings and systems.</span></div>
+            <div><span class="font-semibold text-gray-700">How Logititles helps:</span> <span class="text-gray-500">Upload a CSV, classify titles in bulk, review uncertain matches, and export clean results.</span></div>
+            <div><span class="font-semibold text-indigo-600">Recommended plan:</span> <span class="text-gray-700 font-semibold">Basic or Pro</span></div>
+          </div>
+        </div>
+
+        <div id="role-analyst" class="role-content hidden">
+          <div class="text-3xl mb-3">📊</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Logistics Analyst</h3>
+          <p class="text-gray-500 text-sm mb-6">Turn raw job title data into structured categories for analysis.</p>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold text-gray-700">Problem:</span> <span class="text-gray-500">Large job listing datasets are difficult to analyse without consistent role categories.</span></div>
+            <div><span class="font-semibold text-gray-700">How Logititles helps:</span> <span class="text-gray-500">Classify roles by logistics domain, seniority, and related fields, then review summary charts and ask the AI Assistant.</span></div>
+            <div><span class="font-semibold text-indigo-600">Recommended plan:</span> <span class="text-gray-700 font-semibold">Pro</span></div>
+          </div>
+        </div>
+
+        <div id="role-consultant" class="role-content hidden">
+          <div class="text-3xl mb-3">🔍</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Consultant / Researcher</h3>
+          <p class="text-gray-500 text-sm mb-6">Prepare cleaner datasets for workforce, market, or salary-related research.</p>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold text-gray-700">Problem:</span> <span class="text-gray-500">Raw job title data takes time to clean before it can be used in reports or presentations.</span></div>
+            <div><span class="font-semibold text-gray-700">How Logititles helps:</span> <span class="text-gray-500">Standardise titles, classify roles, and export structured data for further analysis.</span></div>
+            <div><span class="font-semibold text-indigo-600">Recommended plan:</span> <span class="text-gray-700 font-semibold">Pro</span></div>
+          </div>
+        </div>
+
+        <div id="role-training" class="role-content hidden">
+          <div class="text-3xl mb-3">🎓</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Training Provider</h3>
+          <p class="text-gray-500 text-sm mb-6">Explore logistics role patterns to support course or programme planning.</p>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold text-gray-700">Problem:</span> <span class="text-gray-500">It can be hard to see what types of logistics roles are appearing in the market.</span></div>
+            <div><span class="font-semibold text-gray-700">How Logititles helps:</span> <span class="text-gray-500">Test small datasets and review common logistics domains, skills, and role levels.</span></div>
+            <div><span class="font-semibold text-indigo-600">Recommended plan:</span> <span class="text-gray-700 font-semibold">Guest or Basic</span></div>
+          </div>
+        </div>
+
+        <div id="role-jobseeker" class="role-content hidden">
+          <div class="text-3xl mb-3">🎯</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Job Seeker</h3>
+          <p class="text-gray-500 text-sm mb-6">Understand how a logistics job title may be classified.</p>
+          <div class="space-y-4 text-sm">
+            <div><span class="font-semibold text-gray-700">Problem:</span> <span class="text-gray-500">Similar job titles can be confusing when exploring career options or comparing roles.</span></div>
+            <div><span class="font-semibold text-gray-700">How Logititles helps:</span> <span class="text-gray-500">Use the Single Analyzer to check a title and see its suggested category, seniority, and related skills.</span></div>
+            <div><span class="font-semibold text-indigo-600">Recommended plan:</span> <span class="text-gray-700 font-semibold">Guest (free)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES -->
   <section class="py-20 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto">
@@ -280,7 +397,20 @@
     </p>
   </footer>
 
+  <style>
+    .role-tab { background: white; border-color: #e5e7eb; color: #6b7280; }
+    .role-tab:hover { border-color: #6366f1; color: #6366f1; }
+    .role-tab.active { background: #4f46e5; border-color: #4f46e5; color: white; }
+  </style>
+
   <script>
+    function showRole(role) {
+      document.querySelectorAll('.role-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.role-tab').forEach(el => el.classList.remove('active'));
+      document.getElementById('role-' + role).classList.remove('hidden');
+      document.querySelector('[data-role="' + role + '"]').classList.add('active');
+    }
+
     const API_BASE = "https://logistics-title-mapper-api.onrender.com";
 
     async function submitEmail(email, plan, formMsgId, btnEl) {
